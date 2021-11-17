@@ -35,12 +35,10 @@ doc : Further information in firfilter2.pdf.
 
 Compilers
 ---------
+
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+
 g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
-
-
-
-
 
 
 
