@@ -15,7 +15,9 @@ While not cpu optimised they operate at a useful speed.
 Tested with a 201 tap filter on 10 year old desktop;
 
 C code filter 4.5 Million samps/sec.
+
 C++ code filter using arrays 4.4 Million samps/sec.
+
 C++ code filter using STL vectors 2.0 Million samps/sec.
 
 
