@@ -33,5 +33,15 @@ testing : Code used for testing filters. This also includes
           
 doc : Further information in firfilter2.pdf.
 
+Compilers
+---------
+gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+
+
+
+
+
+
 
 Paul Byrne 9/11/21
