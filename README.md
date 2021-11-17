@@ -25,9 +25,12 @@ Folder Contents
 ---------------
 
 filtercode : source code for filters.
+
 firdesign : Python scripts and Qt5 ui for FIR design.
+
 testing : Code used for testing filters. This also includes
           make files, and filter coefficient files.
+          
 doc : Further information in firfilter2.pdf.
 
 
