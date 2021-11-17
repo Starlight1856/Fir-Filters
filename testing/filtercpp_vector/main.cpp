@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//#define STORE_TO_FILE
 
 const int SIGNAL_LENGTH = 1000;
 void signal_gen(double* pdata);
@@ -31,17 +32,24 @@ int main()
       std::cout << "Error: unable to proceed " << std::endl;
       return 0;
       }
-
+    
+    #ifdef STORE_TO_FILE
     opfile.open("/tmp/data4.txt", std::ofstream::out);
+    #endif
+    
     start_time = current_timestamp();
     for(int i =0; i< SIGNAL_LENGTH; i++)
       {
       filt.Filter( &signal[i], &op);
+      #ifdef STORE_TO_FILE  
       opfile << op << "   "<<  signal[i]<<std::endl;
+      #endif    
       }
     stop_time = current_timestamp();
     std::cout << "Elasped time = " << stop_time- start_time << std::endl;;
+    #ifdef STORE_TO_FILE
     opfile.close();
+    #endif
     std::cout << "Number Samples ="<< SIGNAL_LENGTH << std::endl;
     return 0;
 }
