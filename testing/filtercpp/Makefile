@@ -1,7 +1,7 @@
 TARGET = prog
 LIBS =
 CC = g++
-CXXFLAGS = -Wall -g -O3 
+CXXFLAGS = -Wall -g -O3 -std=c++11
 
 
 .PHONY: default all clean
